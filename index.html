@@ -4,54 +4,48 @@
     </head>
     
     <body>
-        <h1>Datos del usuario:</h1>
+        <h1>Registro</h1>
 
-        <form>
+        <form autocomplete="on">
             <table>
                 <tr>
                     <td>Nombre:</td>
-                    <td><input type="text" maxlength="20" size="20" name="nombre"></td>
+                    <td><input type="text" maxlength="20" size="20" id="nombre" name="nombre" required></td>
                 </tr>
 
                 <tr>
-                    <td>Apellidos:</td>
-                    <td><input type="text" maxlength="20" size="20" name="apellidos"></td>
+                    <td>Primer apellido:</td>
+                    <td><input type="text" maxlength="20" size="20" id="apellidos" name="apellidos" required></td>
                 </tr>
 
                 <tr>
-                    <td>Edad:</td>
-                    <td><input type="text" maxlength="3" size="3" name="edad"></td>
+                    <td>Fecha de nacimiento:</td>
+                    <td><input type="date" id="edad" name="edad" required></td>
                 </tr>
-
-                <tr><td></td></tr>
-                <tr><td>Sexo:</td></tr>
-                <tr><td><input type="radio" name="sexo" value="0"/>Hombre</td></tr>
-                <tr><td><input type="radio" name="sexo" value="1"/>Mujer</td></tr>
-                <tr><td></td></tr>
 
                 <tr>
-                    <td>Titulación:</td>
-                    <td>
-                        <select name="titulacion">
-                            <option value="1">Software</option>
-                            <option value="2">Informatica</option>
-                            <option value="3">Computadores</option>
-                            <option value="4">Salud</option>
-                        </select>
-                    </td>
+                    <td>E-mail:</td>
+                    <td><input type="email" maxlength="40" size="40" id="email" name="email" placeholder="email@gmail.com" required></td>
                 </tr>
 
-                <tr><td></td></tr>
-                <tr><td>Aficiones:</td></tr>
-                <tr><td><input type="checkbox" name="aficiones" value="1"/>Deporte</td></tr>
-                <tr><td><input type="checkbox" name="aficiones" value="2"/>Lectura</td></tr>
-                <tr><td><input type="checkbox" name="aficiones" value="3"/>Series y películas</td></tr>
-                <tr><td><input type="checkbox" name="aficiones" value="4"/>Videojuegos</td></tr>
-                <tr><td></td></tr>
-                
-                <tr><td>Breve CV:</td></tr>
-                <tr><td><textarea name="cv" rows="10" cols="30"></textarea></td></tr>
-                <tr><td><input type="submit" value="Enviar"></td></tr>
+                <tr>
+                    <td>Teléfono:</td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="+34666666666" pattern="+34[6-7]{1}[0-9]{8}" required></td>
+                </tr>
+
+                <tr>
+                    <td>Contraseña:</td>
+                    <td><input type="password" maxlength="20" size="20" id="password" name="password" required></td>
+                </tr>
+
+                <tr>
+                    <td>Color favorito:</td>
+                    <td><input type="color" id="color" name="color"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
             </table>
         </form> 
     </body>
